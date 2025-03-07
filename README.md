@@ -99,9 +99,9 @@ mkdir results/backtrace
 python analyze.py -p lammps_128_normal -d 100ms_closed -n 128 -b 128
 ```
 
-The anomaly scores and the abnormal indices after filtering based on a threshold will be saved in [./results/heatmaps_filter/](./results/heatmaps_filter/) and [./results/backtrace_filter/](./results/backtrace/).
+The anomaly scores and the abnormal indices after filtering based on a threshold will be saved in [./results/heatmaps_filter/](./results/heatmaps_filter/) and [./results/backtrace/](./results/backtrace/).
 
 For more details on the parameters, please refer to `analyze.py`.
 
-Then generate backtrace at abnormal indices with SimTrace refer to the script [filter_backtrace](./scripts/filter_backtrace.sh), the backtrace will be saved in [./results/backtrace_filter/](./results/backtrace/).
+Then generate backtrace at abnormal indices with SimTrace refer to the script [filter_backtrace](./scripts/filter_backtrace.sh), the backtrace will be saved in [./results/backtrace/](./results/backtrace/).
 
