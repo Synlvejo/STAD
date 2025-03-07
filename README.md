@@ -14,9 +14,13 @@ torch_geometric     2.5.3
 SimTrace
 ```
 
-## Time Slice Generation
+## Install SimTrace
 
-Install SimTrace
+Install and SimTrace follow the README of SimTrace.
+
+SimTrace link: https://doi.org/10.5281/zenodo.14989855
+
+## Time Slice Generation
 
 For usage, refer to the script [generate_graph](./scripts/generate_graph.sh)
 
