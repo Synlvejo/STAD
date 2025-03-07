@@ -105,12 +105,26 @@ counts = count_elements_in_intervals(array, intervals)
 for interval, count in zip(intervals, counts):
     print(f"interval {interval}: {count} ")
 
-print("printing heatmap after filtering...")
+print("filter abnormal indices...")
 t0 = mean + 1 * std_dev
 t1 = mean + 2 * std_dev
 t2 = mean + 3 * std_dev
 array = array.T
 
+indices = []  
+for i, row in enumerate(array):  
+    for j, value in enumerate(row):  
+        if value > t2:  
+            indices.append((i, j))  
+# print(indices)
+
+indices_filename = './results/backtrace/' + process + '_' + duration + '_abnormal_indices.txt'
+  
+with open(indices_filename, 'w') as file:  
+    for index in indices:  
+        file.write(f'{index[0]} {index[1]}\n')  
+
+print("printing heatmap after filtering...")
 def categorize(value):
     if value <= t0:
         return 0  
