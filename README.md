@@ -16,7 +16,7 @@ SimTrace
 
 ## Time Slice Generation
 
-Install JSI_Toolkit
+Install SimTrace
 
 For usage, refer to the script [generate_graph](./scripts/generate_graph.sh)
 
