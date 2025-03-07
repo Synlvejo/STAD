@@ -11,6 +11,7 @@ numpy               1.24.1
 pandas              2.0.3
 torch               2.1.0+cu118
 torch_geometric     2.5.3
+SimTrace
 ```
 
 ## Time Slice Generation
