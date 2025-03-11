@@ -105,3 +105,10 @@ For more details on the parameters, please refer to `analyze.py`.
 
 Then generate backtrace at abnormal indices with SimTrace refer to the script [filter_backtrace](./scripts/filter_backtrace.sh), the backtrace will be saved in [./results/backtrace/](./results/backtrace/).
 
+## Root Cause Aggregation
+```
+python3 tree.py ./results/backtrace 2
+```
+
+And then the anomaly-aggregated call tree is displayed. 
+
